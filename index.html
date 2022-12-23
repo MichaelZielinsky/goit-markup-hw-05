@@ -33,7 +33,7 @@
           <nav class="menu nav-menu-flex">
             <ul class="menu-list">
               <li class="menu-list-item">
-                <a class="link" href="#section1">Agencja</a>
+                <a class="link actual-visited" href="index.html">Agencja</a>
               </li>
               <li class="menu-list-item">
                 <a class="link" href="portfolio.html">Portfolio</a>
@@ -65,7 +65,9 @@
       <section class="content-hero">
         <div class="container hero-btn-flex">
           <h1 class="hero-txt">Efektywne rozwiązania dla twojego biznesu</h1>
-          <button type="button" class="hero-btn">Zamów usługe</button>
+          <button type="button" class="hero-btn" data-modal-open>
+            Zamów usługe
+          </button>
         </div>
       </section>
       <section>
@@ -143,6 +145,9 @@
                 width="370"
                 height="294"
               />
+              <div class="overlay-what-we-do">
+                <p class="overlay-what-txt">Aplikacje komputerowe</p>
+              </div>
             </li>
             <li class="what-we-do-item">
               <img
@@ -151,6 +156,9 @@
                 width="370"
                 height="294"
               />
+              <div class="overlay-what-we-do">
+                <p class="overlay-what-txt">Aplikacje mobilne</p>
+              </div>
             </li>
             <li class="what-we-do-item">
               <img
@@ -159,6 +167,9 @@
                 width="370"
                 height="294"
               />
+              <div class="overlay-what-we-do">
+                <p class="overlay-what-txt">Rozwiązania graficzne</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -391,68 +402,77 @@
           </ul>
         </div>
       </section>
-    </main>
-    <footer class="footer-background">
-      <div class="container footer-box">
-        <address id="section2">
-          <div class="logo-footer-flex">
-            <a class="logo" href="index.html"
-              >Web<span class="logo-footer">Studio</span></a
-            >
+      <footer class="footer-background">
+        <div class="container footer-box">
+          <address id="section2">
+            <div class="logo-footer-flex">
+              <a class="logo" href="index.html"
+                >Web<span class="logo-footer">Studio</span></a
+              >
+            </div>
+            <ul class="list-footer">
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://goo.gl/maps/t7D3Fm8JjVbQzfDk6"
+                  title="Lokalizacja"
+                  >m. Warszawa, Aleje Jerozolimskie 21</a
+                >
+              </li>
+              <li>
+                <a class="contact-link" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li>
+                <a class="contact-link" href="tel:48111111111"
+                  >+48 111 111 111</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="footer-social">
+            <h4>Dołącz do nas</h4>
+            <ul class="footer-icon-list">
+              <li>
+                <a class="icon-footer-social" href="#">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="icon-footer-social" href="#">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="icon-footer-social" href="#">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="icon-footer-social" href="#">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
-          <ul class="list-footer">
-            <li>
-              <a
-                class="footer-link"
-                href="https://goo.gl/maps/t7D3Fm8JjVbQzfDk6"
-                title="Lokalizacja"
-                >m. Warszawa, Aleje Jerozolimskie 21</a
-              >
-            </li>
-            <li>
-              <a class="contact-link" href="mailto:info@example.com"
-                >info@example.com</a
-              >
-            </li>
-            <li>
-              <a class="contact-link" href="tel:48111111111">+48 111 111 111</a>
-            </li>
-          </ul>
-        </address>
-        <div class="footer-social">
-          <h4>Dołącz do nas</h4>
-          <ul class="footer-icon-list">
-            <li>
-              <a class="icon-footer-social" href="#">
-                <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="icon-footer-social" href="#">
-                <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="icon-footer-social" href="#">
-                <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="icon-footer-social" href="#">
-                <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        </div>
+      </footer>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal-box">
+          <button class="modal-btn" data-modal-close>&times;</button>
         </div>
       </div>
-    </footer>
+    </main>
+
+    <script src="./js/model.js"></script>
   </body>
 </html>
