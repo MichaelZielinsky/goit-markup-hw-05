@@ -158,7 +158,7 @@ a {
 .overlay-what-we-do {
   position: absolute;
   bottom: 0px;
-  width: 370px;
+  width: 100%;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
   padding: 27px 90px;
@@ -616,9 +616,9 @@ a {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+  transition: scale(1);
+  transition-duration: 1s;
+  transition-timing-function: ease;
 }
 
 .is-hidden {
@@ -643,9 +643,9 @@ a {
   transition-timing-function: linear;
 }
 
-.backdrop.is-hidden .modal-box {
+/* .backdrop.is-hidden .modal-box {
   transform: translate(-50%, -50%) scale(0.1);
-}
+} */
 
 .modal-btn {
   position: absolute;
